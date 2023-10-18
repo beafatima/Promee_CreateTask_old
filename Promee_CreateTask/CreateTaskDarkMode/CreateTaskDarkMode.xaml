@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_CreateTask.CreateTaskDarkMode.CreateTaskDarkMode"
+             Title="CreateTaskDarkMode">
+    <Frame BackgroundColor="#2E2E2E"
+          x:Name="createTask"
+          VerticalOptions="Center"
+          HorizontalOptions="Fill"
+          HeightRequest="500"
+          Margin="20">
+
+        <StackLayout
+        Spacing="10">
+            <HorizontalStackLayout
+            Spacing="60">
+
+                <ImageButton
+                x:Name="cancel"
+                Source="ekiss.png"
+                Clicked="OnImageButtonClicked"
+                WidthRequest="30"
+                HeightRequest="30"/>
+
+                <Label
+                x:Name="labelcreateTask"
+                Text="Create Task"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="white"/>
+
+                <ImageButton
+                x:Name="check"
+                Source="tsekk.png"
+                Clicked="OnImageButtonClicked"
+                WidthRequest="30"
+                HeightRequest="30"/>
+
+            </HorizontalStackLayout>
+
+            <Label
+                x:Name="taskName"
+                Text="Task name"
+                HorizontalTextAlignment="Start"
+                FontSize="15"
+                FontAttributes="Bold"
+                TextColor="white"/>
+
+            <Grid>
+                <BoxView
+                Color="White"
+                CornerRadius="10"
+                HeightRequest="38"
+                WidthRequest="280"
+                HorizontalOptions="Fill"
+                Margin="30, 0, 30, 10"/>
+
+                <Entry
+                x:Name="inputTaskName"
+                WidthRequest="280"
+                Margin="10,0,10,0"
+                TextColor="white"/>
+
+            </Grid>
+            <Grid>
+                <Label
+                x:Name="time"
+                Text="Time"
+                HorizontalTextAlignment="Start"
+                FontSize="15"
+                FontAttributes="Bold"
+                TextColor="white"/>
+
+                <BoxView
+                Color="White"
+                CornerRadius="10"
+                HeightRequest="38"
+                WidthRequest="280"
+                HorizontalOptions="Fill"
+                Margin="30, 30, 30, 10"/>
+                <TimePicker 
+                x:Name="inputTime"
+                WidthRequest="280"
+                Margin="30,30,30,0"
+                TextColor="gray"/>
+            </Grid>
+            <Grid>
+                <Label
+                x:Name="date"
+                Text="Date"
+                HorizontalTextAlignment="Start"
+                FontSize="15"
+                FontAttributes="Bold"
+                TextColor="white"
+                />
+                <BoxView
+                Color="White"
+                CornerRadius="10"
+                HeightRequest="38"
+                WidthRequest="280"
+                HorizontalOptions="Fill"
+                Margin="30, 30, 30, 10"/>
+
+                <DatePicker 
+                x:Name="inputDate"
+                TextColor="gray"
+                WidthRequest="280"
+                Margin="0,30,0,0"/>
+            </Grid>
+            <Grid>
+                <Label
+                x:Name="addNote"
+                Text="Add note"
+                HorizontalTextAlignment="Start"
+                FontSize="15"
+                FontAttributes="Bold"
+                TextColor="white"/>
+
+                <BoxView
+                Color="White"
+                CornerRadius="10"
+                HeightRequest="38"
+                WidthRequest="280"
+                HorizontalOptions="Fill"
+                Margin="30, 30, 30, 10"/>
+
+                <Entry
+                x:Name="inputAddNote"
+                WidthRequest="280"
+                Margin="10,30,10,0"/>
+            </Grid>
+
+        </StackLayout>
+    </Frame>
+</ContentPage>

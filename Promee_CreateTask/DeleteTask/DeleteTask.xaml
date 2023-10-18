@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_CreateTask.DeleteTask.DeleteTask"
+             Title="DeleteTask">
+    <Frame BackgroundColor="#FFB800"
+          x:Name="delete"
+          VerticalOptions="End"
+          HorizontalOptions="Fill"
+          HeightRequest="120"
+          Margin="20"
+          CornerRadius="20">
+
+        <VerticalStackLayout>
+            <Label
+                x:Name="delit"
+                Text="Delete"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="Black"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"/>
+
+            <Line
+                X1="300"
+                Y1="15"
+                X2="0"
+                Y2="15"
+                Stroke="#F7D378"/>
+
+            <Label
+                Padding="15"
+                x:Name="del"
+                Text="Cancel"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="Black"
+                VerticalOptions="End"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </Frame>
+</ContentPage>
